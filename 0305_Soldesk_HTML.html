@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <title>13/14/15_Layout/Semantic/E-goverFramework</title>
+    </head>
+
+    <body>
+        <!-- layout -->
+        <div id="wrap" style="background-color: burlywood;">_wrap
+
+            <div id="header" style="background-color: chartreuse;">_Header 머리말(대분류)</div>
+            <div id="contents" style="background-color: crimson;">_Contents
+                <div id="middle" style="background-color: darkmagenta;">_Middle (중분류)</div>
+                <div id="main" style="background-color: lightcoral;">_main 본문</div>
+            </div>
+            <div id="footer" style="background-color: cyan;">_Footer 꼬리말</div>
+
+        </div>
+
+        <div id="wrap">
+
+            <div id="header">
+
+                <div>
+
+                    <a>Home</a>
+                    <a>English</a>
+
+                </div>
+                
+                <div>
+                    <h1>표준프레임워크 포털</h1>
+
+                    <!-- 대분류 -->
+                    <ul>
+                        <li>개발 가이드</li>
+                        <li>다운로드</li>
+                        <li>알림 마당</li>
+                    </ul>
+
+                    <form>
+                        <input type="text">
+                        <input type="button" value="검색">
+                    </form>
+
+                </div>
+
+                <div id="middle">
+
+                    <h2>일림 마당</h2>
+                    <ul>
+                        <li>공지사항</li>
+                        <li>자료실</li>
+                        <li>관련 참고문서</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="main">
+
+                <div id="title">
+
+                    <h2>알림마당</h2>
+                    <ul>
+                        <li>공지사항</li>
+                        <li>자료실</li>
+                        <li>관련참고문서</li>
+                    </ul>
+
+                </div>
+
+                <div id="contents">
+
+                    <h3>공지사항</h3>
+                    
+                    <table border="1">
+                        
+                        <tr>
+                            <td>164 [~~]</td>
+                        </tr>
+                        <tr>
+                            <td> 163 '21년~~</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="pagelist">
+                    <ul>
+                        <li>[1]</li>
+                        <li>[2]</li>
+                        <li>[3]</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="footer">
+
+                <h1>꼬리말</h1>
+                <ul>
+                    <li>주소</li>
+                    <li>찾아오는 길</li>
+                    <li>전화번호</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <hr>
+
+        <h3>Semantic Elements</h3>
+        <header>분류</header>
+        <nav>링크 태그 즉, 링크로 구성되어 있는 섹션</nav>
+        <section>제목 분류 캐그</section>
+        <article>내용이 없는 부분은 사용x 즉, 내용이 있는 부분 지정시 사용</article>
+        <aside>헤더, 메인, 푸터가 아닌 영역 지정시 사용</aside>
+        <footer></footer>
+
+        <hr>
+        <hr>
+
+        <div id="wrap">
+
+            <header>
+
+                <section>
+
+                    <nav>
+                        <div>
+                            <a>home</a>
+                            <a>English</a>
+                        </div>
+                    </nav>
+
+                </section>
+
+                <section>
+
+                    <h1>standard framework portal</h1>
+
+                    <nav>
+                        <ul>
+                            <li>개발 가이드</li>
+                            <li>다운로드</li>
+                            <li>알림마당</li>
+                        </ul>
+                    </nav>
+
+                    <form>
+                        <input type="text">
+                        <input type="button">
+                    </form>
+
+                </section>
+
+            </header>
+
+            <main>>
+                
+                <div id="title">
+
+                </div>
+
+                <div id="contents">
+
+                    <section>
+
+                        <h3>공지사항</h3>
+                        <div id="bbs">
+                            <table border="1">
+                                <tr>
+                                    <td>164~~</td>
+                                </tr>
+                                <tr>
+                                    <td>163~~</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="pagelist">
+                            <nav>
+                                <ul>
+                                    <li>[1]</li>
+                                    <li>[2]</li>
+                                    <li>[3]</li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </section>
+
+                </div>
+            
+            </main>
+
+            <aside>
+                <nav>
+                    <h3>고객센터</h3>
+                    <ul>
+                        <li>자주하는 질문</li>
+                        <li>센터 소개</li>
+                        <li>찾아오는길</li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <footer>
+                <section>
+                    <nav>
+                        <ul>
+                            <li>대표문의 전화</li>
+                            <li>전화번호</li>
+                        </ul>
+                    </nav>
+                </section>
+            </footer>
+
+        
+        </div>
+
+    </body>
+
+</html>

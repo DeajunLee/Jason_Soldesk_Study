@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> 10/11/12_from/variInput/BlockTab </title>
+    </head>
+
+    <body>
+
+        <!-- from 입력양식 -->
+        <!-- 폼 컨트롤 요소 -->
+
+        <!-- input 요소 -->
+        <input type="button">
+        <input type="button" value="로그인">
+        <input type="button" value="검색">
+        <input type="button" value="등록">
+        <hr>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+        <hr>
+
+        <button>회원가입</button>
+        <hr>
+
+        <h3>로/그/인</h3>
+        <from>
+            <!-- 아이디 : <input type="text"> -->
+
+            <table border="1">
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text"></td>
+                    <td rowspan="2"><input type="button" value="로그인"></td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+        </from>
+
+        <!-- 주의사항
+            <from>
+                <from></from>
+            <from> 이러한 하나의 from 내부에 중첩하여 사용은 불가 - 문법적 오류 -->
+
+        <h3>회원가입</h3>
+        <form id="memfrm">
+
+            아이디: <input  type="text"
+                            id="userid"
+                            name="userid"
+                            size="12"
+                            maxlength="5"
+                            placeholder="아이디를 입력해주세요"
+                            required>    <!--반드시 입력을 요구-->
+                    <input type="button" value="중복확인">
+            <hr>
+            
+            비밀번호 : <input type="password"
+                            id="userpw"
+                            name="userpw"
+                            size="12"
+                            maxlength="12"
+                            placeholder="비밀번호를 입력해주세요"
+                            required>
+
+            이름:   <input  type="text" autofocus>
+            <hr>
+
+            우편번호:   <input type="text" size="5" readonly>
+                        <input type="button" value="주소찾기">
+
+            성별: <input type="radio" id="male"   name="gender">남
+                  <input type="radio" id="female" name="gender">여
+            <hr>
+
+            <!-- type=radio는 기본적으로 boolean값 소유 -->
+            나이:   <input type="radio" name="age" value="10">10대
+                    <input type="radio" name="age" value="20" checked>20대
+                    <input type="radio" name="age" value="30">30대
+            <hr>
+
+            <!-- 동시선택 가능 -->
+            <!-- type=checkbox는 기본적으로 boolean값 소유 -->
+            취미:   <input type="checkbox" value="movie">영화
+                    <input type="checkbox" value="book" checkbox>독서
+                    <input type="checkbox" value="cook">요리
+            <hr>
+
+            생년월일:   <select id="myyear">
+                            <option value="2021">2021년</option>
+                            <option value="2020" selected>2020년</option>
+                            <option value="2019">2019년</option>
+                        </select>
+
+                        <!-- 다중선택 가능 : multiple -->
+                        <select id="month" multiple>
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="12">12월</option>
+                        </select>
+            <hr>
+
+            배송메세지:     <textarea cols="30" rows="5" maxlength="200">경비실에 맡겨주세요</textarea>
+            <hr>
+            
+            <input type="submit" value="회원가입">
+            <input type="reset"  value="취소">
+
+
+        </form>
+
+        <hr>
+        <hr>
+
+        <!-- <form>관련 속성
+                id=""       폼 아이디
+                name=""     폼 이름
+                method=""   전송방식 get/post
+                action=""   사용자 입력 요청한 정보를 서버측에 받는 페이지 명/명령어
+                enctype=""  파일 첨부해서 전송하는 경우 -->
+
+        <form id="bbsfrm" name="bbsfrm" method="get" action="ok.jsp" >
+
+        </form>
+        <hr>
+
+        <form>
+            <input type="color">
+            <input type="date">
+            <input type="email">
+            <input type="number">
+            <input type="range">
+            <input type="search">
+            <input type="time">
+        </form>
+        <hr>
+
+        <h3>Input Type Number</h3>
+        <form>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+
+        <h3>Input Type Range</h3>
+        <form>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </form>
+
+        <hr>
+        <hr>
+
+        <h3>블럭 요소</h3>
+
+        <pre>
+            서울 종로구
+        </pre>
+
+        <textarea></textarea>
+
+        <hr>
+        <h3>inline 요소</h3>
+        <!-- 인라인 요소의 크기는 자신이 -->
+        
+        <hr>
+        <h3>블럭요소의 크기</h3>
+        <div style="background-color: red;">거짓말이라도 해서</div>
+        <blockquote style="background-color: green;">널 보고 싶어</blockquote>
+        <pre style="background-color: blue;">줄게 남아있다고</pre>
+
+        <h1 style="background-color: brown;">억지를 부리고</h1>
+        <ul style="background-color: chartreuse;">
+            <li>한 번더 너를</li>
+            <li>보고싶어</li>
+        </ul>
+
+        <hr>
+        <h3>인라인 요소 크기</h3>
+        <strong style="background-color: darkorchid;">나 많이 구차하지만</strong><br>
+        <span style="background-color: darkturquoise;">네 맘을 돌릴 수만 있다면</span>
+        <!-- div는 블럭요소, span은 인라인 요소 -->
+
+        <hr>
+        <h3>블럭 크기 조절</h3>
+        <!-- 블럭 크기, 인라인 요소 조절 = css 연관(style), div&span은 css 처리 필수 -->
+
+        <div style="background-color: fuchsia; width: 250%; height: 200%">다시 날 사랑하게</div>   <!--css에서는 단위표준 필수(px, %...), 중복블럭 선언 가능. 따라서 블럭 순서 중요.-->
+
+
+    </body>
+
+</html>
